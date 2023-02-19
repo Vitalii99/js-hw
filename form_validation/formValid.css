@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #ceffff;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color);
+}
+
+/* form */
+#create-account-form {
+    width: 400px;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+}
+
+/* title */
+.title {
+    margin-bottom: 20px;
+}
+
+/* input group */
+.input-group {
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.success-input input {
+    border: 2px limegreen solid;
+}
+
+.error-input input {
+    border: 2px red solid;
+}
+
+/* icons */
+.input-group i {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.success-input i.fa-circle-check {
+    color: limegreen;
+    visibility: visible;
+}
+
+.error-input i.fa-circle-exclamation {
+    color: red;
+    visibility: visible;
+}
+
+/* paragraph error */
+.input-group p {
+    font-size: 1rem;
+    color: red;
+    visibility: hidden;
+}
+
+.error-input p {
+    visibility: visible;
+}
+
+/* buttons */
+.btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+input[type="reset"] {
+    padding: 10px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #9e9c9c;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #1ec5c5;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+}
