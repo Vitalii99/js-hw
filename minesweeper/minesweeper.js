@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     // create board
-    let column = 40
-    let row = 18
+    let column = 10
+    let row = 10
     let sizeSquare = 30
     let width = `${column * sizeSquare}px`
     let height = `${row * sizeSquare}px`
